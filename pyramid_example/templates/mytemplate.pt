@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pyramid web application">
+    <meta name="author" content="Pylons Project">
+    <link rel="shortcut icon" href="${request.static_url('pyramid_example:static/pyramid-16x16.png')}">
+
+    <title>Starter Scaffold for The Pyramid Web Framework</title>
+
+
+
+
+  </head>
+
+  <body>
+
+<div class="nav">
+    <div class="account-nav">
+        <a href="/account/register">Register</a>
+    </div>
+
+    <a href="/home/index">home</a> |
+    <a href="/albums">albums</a> |
+    <a href="/home/contact">contact</a> |
+    <a href="/home/about">about</a>
+</div>
+
+<div class="main_content">
+    <div metal:define-slot="main_content"></div>
+</div>
+
+  </body>
+</html>
